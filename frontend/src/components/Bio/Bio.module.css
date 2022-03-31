@@ -1,0 +1,9 @@
+.bio__title {
+  display: flex;
+  font-size: 1.8rem;
+  white-space: pre-wrap;
+}
+
+.bio__title__name {
+  font-weight: bold;
+}
