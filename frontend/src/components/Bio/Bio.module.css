@@ -10,6 +10,6 @@
 
 .bio__picture {
   max-width: 28rem;
-  border-radius: 5rem;
+  border-radius: 50rem;
   box-shadow: 0 0 1.2rem var(--primary-color);
 }
