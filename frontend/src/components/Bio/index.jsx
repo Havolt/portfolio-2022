@@ -13,7 +13,7 @@ const Bio = () => {
   const whiteSpace = " ";
 
   return (
-    <div className="bio">
+    <div className={styles.bio}>
       <img
         className={styles.bio__picture}
         src={bioProfilePic}
