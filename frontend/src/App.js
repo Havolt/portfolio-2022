@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./styles/App.css";
 
+import { SectionProvider } from "./context";
+
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Bio from "./components/Bio";
@@ -16,7 +18,9 @@ function App() {
     <div className="App">
       {showHeader && <Header></Header>}
       <Bio></Bio>
-      <Nav></Nav>
+      <SectionProvider>
+        <Nav></Nav>
+      </SectionProvider>
       {showContact && <Contact></Contact>}
       {showFooter && <Footer></Footer>}
     </div>

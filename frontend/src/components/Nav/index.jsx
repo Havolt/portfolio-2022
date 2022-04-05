@@ -1,15 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+
+import { SectionContext } from "../../context";
 
 import NavItem from "./NavItem/index";
 
 import styles from "./Nav.module.css";
 
 const Nav = () => {
-  const [navData, setNavData] = useState([
-    { name: "About", selected: false },
-    { name: "Companies", selected: false },
-    { name: "Contact", selected: false },
-  ]);
+  const navData = useContext(SectionContext);
 
   const navJSX = navData.map((item) => (
     <NavItem selected={item.selected}>{item.name}</NavItem>
