@@ -1,0 +1,13 @@
+.nav__link {
+  background-color: unset;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--interactive-text);
+  margin: 0 1.4rem;
+}
+
+.nav__link:hover {
+  cursor: pointer;
+  color: var(--interactive-text--light);
+}
