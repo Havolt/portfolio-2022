@@ -1,16 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import styles from "./Bio.module.css";
 import bioProfilePic from "./port-bio-main.jpg";
 
 const Bio = () => {
-  const [bioTitleStart, setBioTitleStart] = useState("Hi, I'm ");
-  const [bioTitleEnd, setBioTitleEnd] = useState(
-    ". A front end Wed Developer."
-  );
-
   const name = "Mark Fitzpatrick";
-  const whiteSpace = " ";
+  const bioFull = ["Hi, I'm ", name, ". A front end Wed Developer."];
+  const [bioTitleStart, setBioTitleStart] = useState("");
+  const [bioTitleEnd, setBioTitleEnd] = useState("");
+  const [hideFull, setHideFull] = useState(false);
+
+  const writeBio = (hidingName) => {
+    if (!hidingName) {
+      console.log(bioFull);
+    }
+  };
+
+  useEffect(() => {
+    writeBio(hideFull);
+  }, [hideFull]);
 
   return (
     <div className={styles.bio}>
