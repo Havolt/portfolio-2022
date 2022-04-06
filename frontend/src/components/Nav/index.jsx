@@ -10,7 +10,9 @@ const Nav = () => {
   const navData = useContext(SectionContext);
 
   const navJSX = navData.map((item) => (
-    <NavItem selected={item.selected}>{item.name}</NavItem>
+    <NavItem key={item.name} selected={item.selected}>
+      {item.name}
+    </NavItem>
   ));
 
   return <nav className={styles.nav}>{navJSX}</nav>;
