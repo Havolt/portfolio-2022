@@ -13,6 +13,7 @@
 
 .bio__title__name {
   font-weight: bold;
+  min-height: 1.8rem;
 }
 
 .bio__picture {

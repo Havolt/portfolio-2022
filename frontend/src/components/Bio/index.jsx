@@ -6,23 +6,34 @@ import bioProfilePic from "./port-bio-main.jpg";
 import bioData from "../../data/bio.json";
 
 const Bio = () => {
-  const [bioText, setBioText] = useState(["", "", ""]);
-
+  // State for the bioText
   const [bioTextStart, setBioTextStart] = useState("");
-  const [bioName, setBioName] = useState(bioData.name);
+  const [bioName, setBioName] = useState("");
   const [bioTextEnd, setBioTextEnd] = useState("");
 
-  const [hideFull, setHideFull] = useState(false);
+  // State for what is to be displayed
+  const [hideFull, setHideFull] = useState(true);
 
-  const writeBio = (hidingIntro) => {
-    if (!hidingIntro) {
-    } else {
+  const writeBio = (stateText, comparisonText, textSetter) => {
+    if (stateText !== comparisonText) {
+      textSetter(
+        (prevState) => (prevState += comparisonText.split("")[stateText.length])
+      );
     }
   };
 
   useEffect(() => {
-    writeBio(hideFull);
-  }, [hideFull]);
+    console.log(1);
+    const delayBio = setTimeout(() => {
+      if (hideFull) {
+        writeBio(bioName, bioData.name, setBioName);
+      }
+    }, 50);
+
+    return () => {
+      clearTimeout(delayBio);
+    };
+  }, [hideFull, bioTextStart, bioTextEnd, bioName]);
 
   return (
     <div className={styles.bio}>
