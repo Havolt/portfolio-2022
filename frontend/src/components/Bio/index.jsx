@@ -12,21 +12,34 @@ const Bio = () => {
   const [bioTextEnd, setBioTextEnd] = useState("");
 
   // State for what is to be displayed
-  const [hideFull, setHideFull] = useState(true);
+  const [hideFull, setHideFull] = useState(false);
 
   const writeBio = (stateText, comparisonText, textSetter) => {
     if (stateText !== comparisonText) {
       textSetter(
         (prevState) => (prevState += comparisonText.split("")[stateText.length])
       );
+      return true;
     }
+    return false;
   };
 
   useEffect(() => {
-    console.log(1);
+    // Set Delay on intro text to make text appearing fluid
     const delayBio = setTimeout(() => {
       if (hideFull) {
         writeBio(bioName, bioData.name, setBioName);
+      } else {
+        const foundIntroChange = writeBio(
+          bioTextStart,
+          bioData.start,
+          setBioTextStart
+        );
+        if (foundIntroChange) return;
+        const foundNameChange = writeBio(bioName, bioData.name, setBioName);
+        if (foundNameChange) return;
+        const foundEndChange = writeBio(bioTextEnd, bioData.end, setBioTextEnd);
+        if (foundEndChange) return;
       }
     }, 50);
 
