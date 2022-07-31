@@ -1,5 +1,5 @@
 .nav {
-  justify-content: center;
   display: flex;
-  align-self: flex-start;
+  align-self: center;
+  margin: 4rem 0;
 }

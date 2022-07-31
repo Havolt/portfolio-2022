@@ -4,8 +4,8 @@ export const SectionContext = createContext();
 
 export const SectionProvider = (props) => {
   const [navData, setNavData] = useState([
-    { name: "About", selected: false },
-    { name: "Companies", selected: false },
+    // { name: "About", selected: false },
+    // { name: "Companies", selected: false },
     { name: "Contact", selected: false },
   ]);
   return (
