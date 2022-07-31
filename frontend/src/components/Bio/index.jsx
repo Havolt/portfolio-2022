@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 
 import styles from "./Bio.module.css";
 import bioProfilePic from "./port-bio-main.jpg";
+
+import { SectionContext } from "../../context";
 
 import bioData from "../../data/bio.json";
 
@@ -10,6 +12,8 @@ const Bio = () => {
   const [bioTextStart, setBioTextStart] = useState("");
   const [bioName, setBioName] = useState("");
   const [bioTextEnd, setBioTextEnd] = useState("");
+
+  const context = useContext(SectionContext);
 
   const textRefreshTime = 22;
 
@@ -42,6 +46,7 @@ const Bio = () => {
         if (foundNameChange) return;
         const foundEndChange = writeBio(bioTextEnd, bioData.end, setBioTextEnd);
         if (foundEndChange) return;
+        return context.setBioTitleFinished(true);
       }
     }, textRefreshTime);
 
