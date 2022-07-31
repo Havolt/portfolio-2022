@@ -2,6 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 
 import styles from "./Bio.module.css";
 import bioProfilePic from "./port-bio-main.jpg";
+import bioProfilePicWebp from "./port-bio-main.webp";
 
 import { SectionContext } from "../../context";
 
@@ -53,16 +54,19 @@ const Bio = () => {
     return () => {
       clearTimeout(delayBio);
     };
-  }, [hideFull, bioTextStart, bioTextEnd, bioName]);
+  }, [hideFull, bioTextStart, bioTextEnd, bioName, context]);
 
   return (
     <div className={styles.bio}>
-      <img
-        className={styles.bio__picture}
-        src={bioProfilePic}
-        alt="Mark sitting smiling."
-        srcSet=""
-      />
+      <picture>
+        <source srcSet={bioProfilePicWebp} type="image/webp" />
+        <source srcSet={bioProfilePic} type="image/webp" />
+        <img
+          className={styles.bio__picture}
+          src={bioProfilePic}
+          alt="Mark having a cuppa."
+        />
+      </picture>
       <div className={styles.bio__title}>
         <span className="bio__title__start">{bioTextStart}</span>
         <span className={styles.bio__title__name}>{bioName}</span>
