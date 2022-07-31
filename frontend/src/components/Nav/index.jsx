@@ -18,7 +18,9 @@ const Nav = () => {
   return (
     <nav
       className={`${styles.nav}  ${
-        !context.bioTitleFinished && styles["nav--hidden"]
+        !context.bioTitleFinished
+          ? styles["nav--hidden"]
+          : styles["nav--display"]
       }`}
     >
       {navJSX}
