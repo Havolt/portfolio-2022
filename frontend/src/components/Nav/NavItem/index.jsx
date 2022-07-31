@@ -3,7 +3,16 @@ import React from "react";
 import styles from "./NavItem.module.css";
 
 const NavItem = ({ children }) => {
-  return <button className={`${styles.nav__link}`}>{children}</button>;
+  return (
+    <a
+      href={children.link}
+      rel="noreferrer"
+      target="_blank"
+      className={`${styles.nav__link}`}
+    >
+      {children.name}
+    </a>
+  );
 };
 
 export default NavItem;

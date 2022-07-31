@@ -11,6 +11,8 @@ const Bio = () => {
   const [bioName, setBioName] = useState("");
   const [bioTextEnd, setBioTextEnd] = useState("");
 
+  const textRefreshTime = 30;
+
   // State for what is to be displayed
   const [hideFull, setHideFull] = useState(false);
 
@@ -41,7 +43,7 @@ const Bio = () => {
         const foundEndChange = writeBio(bioTextEnd, bioData.end, setBioTextEnd);
         if (foundEndChange) return;
       }
-    }, 50);
+    }, textRefreshTime);
 
     return () => {
       clearTimeout(delayBio);

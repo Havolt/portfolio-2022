@@ -11,7 +11,7 @@ const Nav = () => {
 
   const navJSX = navData.map((item) => (
     <NavItem key={item.name} selected={item.selected}>
-      {item.name}
+      {item}
     </NavItem>
   ));
 
