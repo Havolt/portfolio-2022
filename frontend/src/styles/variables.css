@@ -1,5 +1,9 @@
 body {
   --main-bg-color: #f7f7f7;
+
+  --main-bg-color--start: #f7f7f785;
+  --main-bg-color--end: #e5e5e5ba;
+
   --primary-color: #034a64;
 
   --interactive-text: #0066da;

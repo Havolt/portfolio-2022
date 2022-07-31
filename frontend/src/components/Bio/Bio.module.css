@@ -5,6 +5,7 @@
   justify-content: space-between;
   min-width: 100%;
   overflow: hidden;
+  padding: 1rem 0;
 }
 
 .bio__title {
