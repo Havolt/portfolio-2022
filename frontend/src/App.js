@@ -16,13 +16,15 @@ function App() {
 
   return (
     <div className="App">
-      {showHeader && <Header></Header>}
-      <Bio></Bio>
       <SectionProvider>
+        {showHeader && <Header></Header>}
+        <Bio></Bio>
+
         <Nav></Nav>
+
+        {showContact && <Contact></Contact>}
+        {showFooter && <Footer></Footer>}
       </SectionProvider>
-      {showContact && <Contact></Contact>}
-      {showFooter && <Footer></Footer>}
     </div>
   );
 }

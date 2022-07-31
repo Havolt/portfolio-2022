@@ -11,7 +11,7 @@ const Bio = () => {
   const [bioName, setBioName] = useState("");
   const [bioTextEnd, setBioTextEnd] = useState("");
 
-  const textRefreshTime = 30;
+  const textRefreshTime = 22;
 
   // State for what is to be displayed
   const [hideFull, setHideFull] = useState(false);

@@ -12,8 +12,13 @@ export const SectionProvider = (props) => {
       link: "https://www.linkedin.com/in/mark-fitzpatrick-491419100/",
     },
   ]);
+
+  const [bioTitleFinished, setBioTitleFinished] = useState(false);
+
   return (
-    <SectionContext.Provider value={navData}>
+    <SectionContext.Provider
+      value={{ navData, bioTitleFinished, setBioTitleFinished }}
+    >
       {props.children}
     </SectionContext.Provider>
   );

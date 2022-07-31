@@ -7,15 +7,23 @@ import NavItem from "./NavItem/index";
 import styles from "./Nav.module.css";
 
 const Nav = () => {
-  const navData = useContext(SectionContext);
+  const context = useContext(SectionContext);
 
-  const navJSX = navData.map((item) => (
+  const navJSX = context.navData.map((item) => (
     <NavItem key={item.name} selected={item.selected}>
       {item}
     </NavItem>
   ));
 
-  return <nav className={styles.nav}>{navJSX}</nav>;
+  return (
+    <nav
+      className={`${styles.nav}  ${
+        !context.bioTitleFinished && styles["nav--hidden"]
+      }`}
+    >
+      {navJSX}
+    </nav>
+  );
 };
 
 export default Nav;
