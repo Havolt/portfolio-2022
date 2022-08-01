@@ -17,13 +17,21 @@
   min-height: 2.4rem;
 }
 
+/* TODO: Need a better way of making the image not move when title goes on second line */
+@media screen and (max-width: 429px) {
+  .bio__title {
+    min-height: 4.8rem;
+  }
+}
+
 .bio__title__name {
   font-weight: bold;
   min-height: 2.2rem;
 }
 
 .bio__picture {
-  max-width: 28rem;
+  width: var(--bio-image-size);
+  height: var(--bio-image-size);
   border-radius: 50rem;
   box-shadow: 0 0 0.5rem var(--primary-color);
   margin-bottom: 1rem;
