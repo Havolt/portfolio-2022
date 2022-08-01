@@ -33,6 +33,6 @@
   width: var(--bio-image-size);
   height: var(--bio-image-size);
   border-radius: 50rem;
-  box-shadow: 0 0 0.5rem var(--primary-color);
+  box-shadow: 0 0 0.6rem var(--drop-shadow);
   margin-bottom: 1rem;
 }

@@ -9,5 +9,7 @@ body {
   --interactive-text: #0066da;
   --interactive-text--light: #018fee;
 
+  --drop-shadow: #5b5e5f;
+
   --bio-image-size: 28rem;
 }
