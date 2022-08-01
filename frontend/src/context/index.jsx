@@ -7,7 +7,7 @@ export const SectionProvider = (props) => {
     // { name: "About", selected: false },
     // { name: "Companies", selected: false },
     {
-      name: "Contact",
+      name: "LinkedIn",
       selected: false,
       link: "https://www.linkedin.com/in/mark-fitzpatrick-491419100/",
     },
