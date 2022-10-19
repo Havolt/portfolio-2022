@@ -35,4 +35,5 @@
   border-radius: 50rem;
   box-shadow: 0 0 0.6rem var(--drop-shadow);
   margin-bottom: 1rem;
+  background-image: linear-gradient(#ececec, #f3f3f3);
 }
