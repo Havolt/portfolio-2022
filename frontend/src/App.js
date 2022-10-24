@@ -6,6 +6,7 @@ import { SectionProvider } from "./context";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Bio from "./components/Bio";
+import Clients from "./components/Clients";
 import Contact from "./components/Contact";
 import Nav from "./components/Nav";
 
@@ -21,6 +22,8 @@ function App() {
         <Bio></Bio>
 
         <Nav></Nav>
+
+        <Clients></Clients>
 
         {showContact && <Contact></Contact>}
         {showFooter && <Footer></Footer>}
