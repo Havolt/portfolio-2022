@@ -23,7 +23,7 @@ function App() {
 
         <Nav></Nav>
 
-        <Clients></Clients>
+        {/* <Clients></Clients> */}
 
         {showContact && <Contact></Contact>}
         {showFooter && <Footer></Footer>}
