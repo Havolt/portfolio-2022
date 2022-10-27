@@ -1,3 +1,11 @@
 .clients__expand {
   font-size: 2rem;
+  background-color: none;
+  border: 0;
+  color: #7b7979;
+}
+
+.clients__expand:hover {
+  cursor: pointer;
+  color: #4a4a4a;
 }
