@@ -18,9 +18,11 @@
 }
 
 /* TODO: Need a better way of making the image not move when title goes on second line */
-@media screen and (max-width: 429px) {
+@media screen and (max-width: 655px) {
   .bio__title {
     min-height: 4.8rem;
+    min-width: auto;
+    width: 90%;
   }
 }
 
