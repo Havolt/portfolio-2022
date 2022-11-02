@@ -27,7 +27,7 @@ function App() {
 
         {/* <Clients></Clients> */}
 
-        {showCv && <Cv></Cv>}
+        {/* {showCv && <Cv></Cv>} */}
         {showContact && <Contact></Contact>}
         {showFooter && <Footer></Footer>}
       </SectionProvider>

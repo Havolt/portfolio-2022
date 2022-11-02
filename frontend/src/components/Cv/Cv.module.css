@@ -1,0 +1,23 @@
+.cv {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cv__button {
+  border: 0;
+  background-color: transparent;
+  font-size: 2rem;
+  color: #787878;
+}
+
+.cv__button:hover {
+  cursor: pointer;
+  color: #515151;
+}
+
+.cv__description {
+  user-select: none;
+}
