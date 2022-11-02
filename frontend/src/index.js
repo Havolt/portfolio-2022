@@ -5,9 +5,12 @@ import "./styles/variables.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAngleDown,
+  faFileArrowDown,
+} from "@fortawesome/free-solid-svg-icons";
 
-library.add(faAngleDown);
+library.add(faAngleDown, faFileArrowDown);
 
 ReactDOM.render(
   <React.StrictMode>
