@@ -8,12 +8,14 @@ import Footer from "./components/Footer";
 import Bio from "./components/Bio";
 import Clients from "./components/Clients";
 import Contact from "./components/Contact";
+import Cv from "./components/Cv";
 import Nav from "./components/Nav";
 
 function App() {
   const [showHeader, setShowHeader] = useState(false);
   const [showFooter, setShowFooter] = useState(false);
   const [showContact, setShowContact] = useState(false);
+  const [showCv, setShowCv] = useState(true);
 
   return (
     <div className="App">
@@ -25,6 +27,7 @@ function App() {
 
         {/* <Clients></Clients> */}
 
+        {showCv && <Cv></Cv>}
         {showContact && <Contact></Contact>}
         {showFooter && <Footer></Footer>}
       </SectionProvider>
