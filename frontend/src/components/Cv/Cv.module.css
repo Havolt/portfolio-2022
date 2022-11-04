@@ -1,7 +1,7 @@
 .cv {
   position: absolute;
-  right: 1rem;
-  top: 1rem;
+  right: 1.6rem;
+  top: 1.6rem;
   display: flex;
   flex-direction: column;
 }
@@ -20,4 +20,5 @@
 
 .cv__description {
   user-select: none;
+  text-align: center;
 }
