@@ -7,7 +7,7 @@ function Cv() {
     <div className={styles.cv}>
       <button className={styles.cv__button}>
         <FontAwesomeIcon icon="fa-solid fa-file-arrow-down" />
-        <span className={styles.cv__description}>Download CV</span>
+        <span className={styles.cv__button__description}>Download CV</span>
       </button>
     </div>
   );
