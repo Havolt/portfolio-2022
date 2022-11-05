@@ -1,7 +1,7 @@
 .cv {
   position: absolute;
-  right: 1.4rem;
-  top: 1.4rem;
+  right: 1.6rem;
+  top: 1.6rem;
 }
 
 .cv__button {
@@ -21,8 +21,7 @@
 
 .cv__button__description {
   user-select: none;
-  max-width: 4.6rem;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding-top: 0.5rem;
 }
