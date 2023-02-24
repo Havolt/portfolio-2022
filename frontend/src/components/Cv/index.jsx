@@ -1,19 +1,19 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styles from "./Cv.module.css";
+import styles from "./cv.module.css";
 import cvPdf from "./mark_fitzpatrick_cv.pdf";
 
 function Cv() {
   return (
-    <div className={styles.cv}>
+    <div className={styles.container}>
       <a
         href={cvPdf}
         target="_blank"
         rel="noreferrer"
-        className={styles.cv__button}
+        className={styles.button}
       >
         <FontAwesomeIcon icon="fa-solid fa-file-arrow-down" />
-        <span className={styles.cv__button__description}>CV</span>
+        <span className={styles.button__description}>CV</span>
       </a>
     </div>
   );

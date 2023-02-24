@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from "react";
 
-import styles from "./Bio.module.css";
+import styles from "./bio.module.css";
 import bioProfilePic from "./port-bio-main.jpg";
 import bioProfilePicWebp from "./port-bio-main.webp";
 
@@ -57,20 +57,20 @@ const Bio = () => {
   }, [hideFull, bioTextStart, bioTextEnd, bioName, context]);
 
   return (
-    <div className={styles.bio}>
+    <div className={styles.container}>
       <picture>
         <source srcSet={bioProfilePicWebp} type="image/webp" />
         <source srcSet={bioProfilePic} type="image/webp" />
         <img
-          className={styles.bio__picture}
+          className={styles.picture}
           src={bioProfilePic}
           alt="Mark having a cuppa."
         />
       </picture>
-      <div className={styles.bio__title}>
-        <span className="bio__title__start">{bioTextStart}</span>
-        <span className={styles.bio__title__name}>{bioName}</span>
-        <span className="bio__title__end">{bioTextEnd}</span>
+      <div className={styles.title}>
+        <span>{bioTextStart}</span>
+        <span className={styles["title-name"]}>{bioName}</span>
+        <span>{bioTextEnd}</span>
       </div>
     </div>
   );

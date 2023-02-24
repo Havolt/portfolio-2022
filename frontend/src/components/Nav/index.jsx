@@ -1,10 +1,10 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 
 import { SectionContext } from "../../context";
 
 import NavItem from "./NavItem/index";
 
-import styles from "./Nav.module.css";
+import styles from "./nav.module.css";
 
 const Nav = () => {
   const context = useContext(SectionContext);
@@ -17,10 +17,10 @@ const Nav = () => {
 
   return (
     <nav
-      className={`${styles.nav}  ${
+      className={`${styles.container}  ${
         !context.bioTitleFinished
-          ? styles["nav--hidden"]
-          : styles["nav--display"]
+          ? styles["container--hidden"]
+          : styles["container--display"]
       }`}
     >
       {navJSX}

@@ -1,4 +1,4 @@
-.nav__link {
+.link {
   background-color: unset;
   outline: none;
   border: none;
@@ -7,7 +7,7 @@
   margin: 0 1.4rem;
 }
 
-.nav__link:hover {
+.link:hover {
   cursor: pointer;
   color: var(--interactive-text--light);
 }

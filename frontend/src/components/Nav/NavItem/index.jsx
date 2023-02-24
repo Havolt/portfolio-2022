@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./NavItem.module.css";
+import styles from "./navItem.module.css";
 
 const NavItem = ({ children }) => {
   return (
@@ -8,7 +8,7 @@ const NavItem = ({ children }) => {
       href={children.link}
       rel="noreferrer"
       target="_blank"
-      className={`${styles.nav__link}`}
+      className={`${styles.link}`}
     >
       {children.name}
     </a>
