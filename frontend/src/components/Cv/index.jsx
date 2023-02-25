@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styles from "./cv.module.css";
+import styles from "./Cv.module.css";
 import cvPdf from "./mark_fitzpatrick_cv.pdf";
 
 function Cv() {

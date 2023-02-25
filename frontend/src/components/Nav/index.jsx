@@ -4,7 +4,7 @@ import { SectionContext } from "../../context";
 
 import NavItem from "./NavItem/index";
 
-import styles from "./nav.module.css";
+import styles from "./Nav.module.css";
 
 const Nav = () => {
   const context = useContext(SectionContext);

@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./navItem.module.css";
+import styles from "./NavItem.module.css";
 
 const NavItem = ({ children }) => {
   return (
