@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useContext } from "react";
 
 import styles from "./Bio.module.css";
-import bioProfilePic from "./port-bio-main.jpg";
-import bioProfilePicWebp from "./port-bio-main.webp";
+import bioProfilePic from "./port-bio-small.png";
+import bioProfilePicWebp from "./port-bio-small.webp";
 
 import { SectionContext } from "../../context";
 
