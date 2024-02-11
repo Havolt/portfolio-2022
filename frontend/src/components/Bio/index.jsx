@@ -19,7 +19,8 @@ const Bio = () => {
   const textRefreshTime = 18;
 
   // State for what is to be displayed
-  const [hideFull, setHideFull] = useState(false);
+  // const [hideFull, setHideFull] = useState(false);
+  const hideFull = false;
 
   const writeBio = (stateText, comparisonText, textSetter) => {
     if (stateText !== comparisonText) {
@@ -65,6 +66,7 @@ const Bio = () => {
           className={styles.picture}
           src={bioProfilePic}
           alt="Mark having a cuppa."
+          fetchpriority="high"
         />
       </picture>
       <div className={styles.title}>
