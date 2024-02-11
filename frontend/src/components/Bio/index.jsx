@@ -16,7 +16,7 @@ const Bio = () => {
 
   const context = useContext(SectionContext);
 
-  const textRefreshTime = 22;
+  const textRefreshTime = 18;
 
   // State for what is to be displayed
   const [hideFull, setHideFull] = useState(false);
