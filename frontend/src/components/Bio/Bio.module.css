@@ -25,9 +25,14 @@
   }
 }
 
+@media screen and (max-width: 360px) { 
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
 .title-name {
   font-weight: bold;
-  min-height: 2.2rem;
 }
 
 .picture {
