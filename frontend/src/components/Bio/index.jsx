@@ -18,10 +18,6 @@ const Bio = () => {
 
   const textRefreshTime = 18;
 
-  // State for what is to be displayed
-  // const [hideFull, setHideFull] = useState(false);
-  const hideFull = false;
-
   const writeBio = (stateText, comparisonText, textSetter) => {
     if (stateText !== comparisonText) {
       textSetter(
@@ -35,9 +31,6 @@ const Bio = () => {
   useEffect(() => {
     // Set Delay on intro text to make text appearing fluid
     const delayBio = setTimeout(() => {
-      if (hideFull) {
-        writeBio(bioName, bioData.name, setBioName);
-      } else {
         const foundIntroChange = writeBio(
           bioTextStart,
           bioData.start,
@@ -49,13 +42,12 @@ const Bio = () => {
         const foundEndChange = writeBio(bioTextEnd, bioData.end, setBioTextEnd);
         if (foundEndChange) return;
         return context.setBioTitleFinished(true);
-      }
     }, textRefreshTime);
 
     return () => {
       clearTimeout(delayBio);
     };
-  }, [hideFull, bioTextStart, bioTextEnd, bioName, context]);
+  }, [ bioTextStart, bioTextEnd, bioName, context]);
 
   return (
     <div className={styles.container}>
