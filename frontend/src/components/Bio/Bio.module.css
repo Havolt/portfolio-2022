@@ -6,6 +6,12 @@
   min-width: 100%;
   overflow: hidden;
   padding: 1rem 0;
+  opacity: 0;
+}
+
+.container.init {
+  opacity: 1;
+  transition: opacity .4s ease-in;
 }
 
 .title {

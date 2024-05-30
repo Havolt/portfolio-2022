@@ -18,6 +18,8 @@ export const SectionProvider = (props) => {
 
   const [bioTitleFinished, setBioTitleFinished] = useState(false);
 
+  setTimeout(() => { setBioTitleFinished(true)}, 400)
+
   return (
     <SectionContext.Provider
       value={{ navData, bioTitleFinished, setBioTitleFinished }}
