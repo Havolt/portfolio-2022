@@ -9,11 +9,11 @@ export const SectionProvider = (props) => {
       selected: false,
       link: "https://www.linkedin.com/in/mark-fitzpatrick-491419100/",
     },
-    {
-      name: "Durrower",
-      selected: false,
-      link: "https://durrower.com/",
-    },
+    // {
+    //   name: "Durrower",
+    //   selected: false,
+    //   link: "https://durrower.com/",
+    // },
   ]
 
   const [bioTitleFinished, setBioTitleFinished] = useState(false);
